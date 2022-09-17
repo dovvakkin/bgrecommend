@@ -469,7 +469,7 @@
 )
 
 
-(defrule print-board-game
+(defrule print-board-game-rule
   (declare (salience 100))
   ?data-facts <- (result
                   not_party
@@ -503,8 +503,7 @@
 )
 
 
-
-(defrule fuckup
+(defrule nothing-rule
   (declare (salience -100))
 =>
   (printout t "Nothing matching your parameters found :(" crlf)
